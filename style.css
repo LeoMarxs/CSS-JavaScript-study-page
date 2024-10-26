@@ -1,240 +1,240 @@
 /* Estilos básicos */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--background-color, #f0f0f0);
-    color: var(--text-color, #333);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif; /* Define a fonte principal como Arial, com fallback sans-serif */
+    background-color: var(--background-color, #f0f0f0); /* Define a cor de fundo, podendo ser personalizada por variável */
+    color: var(--text-color, #333); /* Define a cor do texto, também personalizável por variável */
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo de largura/altura */
+    scroll-behavior: smooth; /* Ativa o comportamento de rolagem suave */
 }
 
 * {
-    box-sizing: inherit;
+    box-sizing: inherit; /* Define box-sizing para herdar o valor do elemento pai */
 }
 
 header {
-    background: linear-gradient(135deg, #5cb85c, #34a853);
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-    border-bottom: 5px solid #34a853;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background: linear-gradient(135deg, #5cb85c, #34a853); /* Define o fundo com gradiente verde */
+    color: white; /* Define a cor do texto como branca */
+    padding: 30px 20px; /* Adiciona preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+    border-bottom: 5px solid #34a853; /* Adiciona borda inferior verde */
+    position: sticky; /* Fixa o cabeçalho na parte superior durante a rolagem */
+    top: 0; /* Define o posicionamento para o topo da página */
+    z-index: 1000; /* Mantém o cabeçalho acima de outros elementos */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin: 0; /* Remove margens */
+    font-size: 2.5em; /* Define o tamanho da fonte */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Aplica sombra ao texto */
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Define o tamanho da fonte do parágrafo */
 }
 
 /* Estilizando o índice */
 nav {
-    background-color: #f4f4f4;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4; /* Define a cor de fundo */
+    padding: 10px 20px; /* Define o preenchimento interno */
+    margin-bottom: 20px; /* Define o espaçamento inferior */
+    border-radius: 5px; /* Arredonda as bordas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
 }
 
 nav h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 0; /* Define a margem inferior */
 }
 
 /* Estilos para a lista */
 nav ul {
-    list-style-type: none; /* Remove os marcadores */
-    padding: 0;
-    display: flex; /* Alinha os itens em linha */
-    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha, se necessário */
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    display: flex; /* Exibe os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
 }
 
 nav li {
-    margin: 5px 15px; /* Adiciona espaçamento entre os itens */
+    margin: 5px 15px; /* Adiciona margem entre os itens */
 }
 
 nav a {
-    text-decoration: none;
-    color: #5cb85c;
-    transition: color 0.3s;
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #5cb85c; /* Define a cor dos links */
+    transition: color 0.3s; /* Anima a cor do link ao passar o mouse */
 }
 
 nav a:hover {
-    color: #34a853;
+    color: #34a853; /* Altera a cor do link ao passar o mouse */
 }
 
 /* Novos estilos para exemplos de CSS */
 .styled-input {
-    width: 10%;
-    padding: 5px;
-    margin: 10px 0;
-    border: 2px solid #34a853;
-    border-radius: 5px;
-    transition: border-color 0.3s;
+    width: 10%; /* Define a largura do campo de entrada */
+    padding: 5px; /* Define o preenchimento interno */
+    margin: 10px 0; /* Define margem vertical */
+    border: 2px solid #34a853; /* Define a borda verde */
+    border-radius: 5px; /* Arredonda as bordas */
+    transition: border-color 0.3s; /* Anima a cor da borda ao focar */
 }
 
 .styled-input:focus {
-    border-color: #5cb85c;
-    outline: none;
+    border-color: #5cb85c; /* Altera a cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
 }
 
 .botao-com-css {
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #fff;
-    color: #34a853;
-    border: 2px solid #34a853;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+    padding: 10px 20px; /* Define o preenchimento interno */
+    margin: 10px; /* Adiciona margem */
+    background-color: #fff; /* Define o fundo branco */
+    color: #34a853; /* Define a cor do texto */
+    border: 2px solid #34a853; /* Define a borda verde */
+    border-radius: 20px; /* Arredonda as bordas */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    transition: 0.3s; /* Anima as alterações de estilo */
 }
 
 .botao-com-css:hover {
-    background-color: #34a853;
-    color: white;
+    background-color: #34a853; /* Altera a cor de fundo ao passar o mouse */
+    color: white; /* Altera a cor do texto ao passar o mouse */
 }
 
 #toggle-theme-btn {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    border-radius: 50px;
+    position: absolute; /* Posiciona o botão de forma absoluta */
+    right: 20px; /* Define a posição à direita */
+    top: 20px; /* Define a posição no topo */
+    border-radius: 50px; /* Arredonda as bordas */
 }
 
 /* Seções */
 main {
-    padding: 20px;
+    padding: 20px; /* Define o preenchimento interno */
 }
 
 /* Estilos para cards */
 .card1 {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    border: 1px solid #ddd; /* Define a borda cinza */
+    border-radius: 10px; /* Arredonda as bordas */
+    padding: 15px; /* Define o preenchimento interno */
+    margin: 10px 0; /* Define margem vertical */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+    background-color: #fff; /* Define o fundo branco */
 }
 
 .card {
-    display: flex;
-   text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #5cb85c;
-    color: white;
+    display: flex; /* Exibe o card em flex */
+    text-align: center; /* Centraliza o texto */
+    border: 1px solid #ddd; /* Define a borda cinza */
+    border-radius: 10px; /* Arredonda as bordas */
+    padding: 15px; /* Define o preenchimento interno */
+    margin: 10px 0; /* Define margem vertical */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+    background-color: #5cb85c; /* Define o fundo verde */
+    color: white; /* Define a cor do texto como branco */
 }
 
 section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    margin: 20px 0; /* Define margem vertical */
+    padding: 20px; /* Define o preenchimento interno */
+    background-color: #fff; /* Define o fundo branco */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+    border-radius: 10px; /* Arredonda as bordas */
 }
 
 section h2 {
-    text-align: center;
-    font-size: 1.8em;
-    color: #34a853;
-    margin-bottom: 10px;
-    border-bottom: 3px solid #5cb85c;
-    padding-bottom: 5px;
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.8em; /* Define o tamanho da fonte */
+    color: #34a853; /* Define a cor do título */
+    margin-bottom: 10px; /* Define a margem inferior */
+    border-bottom: 3px solid #5cb85c; /* Define a borda inferior verde */
+    padding-bottom: 5px; /* Define o preenchimento inferior */
 }
 
 section p {
-    text-align: center;
-    font-size: 1.1em;
-    margin-bottom: 15px;
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.1em; /* Define o tamanho da fonte */
+    margin-bottom: 15px; /* Define a margem inferior */
 }
 
 /* Efeito hover */
 #hover-box {
-    width: 250px;
-    height: 100px;
-    background-color: #f1f1f1;
-    margin: 0 auto;
-    line-height: 100px;
-    text-align: center;
-    border-radius: 15px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    width: 250px; /* Define a largura */
+    height: 100px; /* Define a altura */
+    background-color: #f1f1f1; /* Define a cor de fundo */
+    margin: 0 auto; /* Centraliza a caixa */
+    line-height: 100px; /* Centraliza verticalmente o texto */
+    text-align: center; /* Centraliza horizontalmente o texto */
+    border-radius: 15px; /* Arredonda as bordas */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Anima as alterações de cor */
 }
 
 #hover-box:hover {
-    background-color: #5cb85c;
-    color: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #5cb85c; /* Altera a cor de fundo ao passar o mouse */
+    color: white; /* Altera a cor do texto ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse */
 }
 
 /* Barra de progresso */
 #progress-container {
-    width: 100%;
-    background-color: #ddd;
-    height: 30px;
-    border-radius: 15px;
-    overflow: hidden;
+    width: 100%; /* Define a largura total */
+    background-color: #ddd; /* Define o fundo cinza */
+    height: 30px; /* Define a altura */
+    border-radius: 15px; /* Arredonda as bordas */
+    overflow: hidden; /* Oculta conteúdo excedente */
 }
 
 #progress-bar {
-    height: 100%;
-    width: 0;
-    background-color: #5cb85c;
-    transition: width 0.5s ease-in-out;
+    height: 100%; /* Preenche a altura do contêiner */
+    width: 0; /* Largura inicial para 0 */
+    background-color: #5cb85c; /* Define a cor verde */
+    transition: width 0.5s ease-in-out; /* Anima o aumento de largura */
 }
 
 /* Slider de controle de cores */
 #color-box {
-    width: 100px;
-    height: 100px;
-    background-color: hsl(0, 100%, 50%);
-    margin: 10px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100px; /* Define a largura */
+    height: 100px; /* Define a altura */
+    background-color: hsl(0, 100%, 50%); /* Define a cor em HSL */
+    margin: 10px auto; /* Centraliza e define a margem */
+    border-radius: 10px; /* Arredonda as bordas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
 }
 
 .slider{
-    display: flex;
-    align-items: center;
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Alinha verticalmente ao centro */
 }
 
 /* Rodapé */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #34a853;
-    color: white;
-    border-top: 5px solid #5cb85c;
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Define o preenchimento interno */
+    background-color: #34a853; /* Define a cor de fundo verde */
+    color: white; /* Define a cor do texto como branco */
+    border-top: 5px solid #5cb85c; /* Define a borda superior */
 }
 
 footer p {
-    margin: 0;
-    font-size: 1em;
+    margin: 0; /* Remove margem */
+    font-size: 1em; /* Define o tamanho da fonte */
 }
 
 /* Tema escuro */
 .dark-theme {
-    --background-color: #333;
-    --text-color: #000000;
+    --background-color: #333; /* Define a cor de fundo para o modo escuro */
+    --text-color: #000000; /* Define a cor do texto para o modo escuro */
 }
 
 .dark-theme header {
-    background: linear-gradient(135deg, #222, #444);
+    background: linear-gradient(135deg, #222, #444); /* Altera o gradiente do cabeçalho no tema escuro */
 }
 
 .dark-theme button {
-    background-color: #555;
-    color: #fff;
+    background-color: #555; /* Altera o fundo dos botões no tema escuro */
+    color: #fff; /* Altera a cor do texto dos botões */
 }
 
 .dark-theme footer {
-    background-color: #222;
+    background-color: #222; /* Define o fundo do rodapé no tema escuro */
 }
