@@ -157,6 +157,54 @@ section p {
     margin-bottom: 15px; /* Define a margem inferior */
 }
 
+/* Slider de controle de cores */
+#color-box {
+    width: 100px; /* Define a largura */
+    height: 100px; /* Define a altura */
+    background-color: hsl(0, 100%, 50%); /* Define a cor em HSL */
+    margin: 10px auto; /* Centraliza e define a margem */
+    border-radius: 10px; /* Arredonda as bordas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+}
+
+.slider{
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+/* Rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Define o preenchimento interno */
+    background-color: #34a853; /* Define a cor de fundo verde */
+    color: white; /* Define a cor do texto como branco */
+    border-top: 5px solid #5cb85c; /* Define a borda superior */
+}
+
+footer p {
+    margin: 0; /* Remove margem */
+    font-size: 1em; /* Define o tamanho da fonte */
+}
+
+/* Tema escuro */
+.dark-theme {
+    --background-color: #333; /* Define a cor de fundo para o modo escuro */
+    --text-color: #000000; /* Define a cor do texto para o modo escuro */
+}
+
+.dark-theme header {
+    background: linear-gradient(135deg, #222, #444); /* Altera o gradiente do cabeçalho no tema escuro */
+}
+
+.dark-theme button {
+    background-color: #555; /* Altera o fundo dos botões no tema escuro */
+    color: #fff; /* Altera a cor do texto dos botões */
+}
+
+.dark-theme footer {
+    background-color: #222; /* Define o fundo do rodapé no tema escuro */
+}
+
 /* Efeito hover */
 #hover-box {
     width: 250px; /* Define a largura */
@@ -204,37 +252,4 @@ section p {
 .slider{
     display: flex; /* Exibe os itens em linha */
     align-items: center; /* Alinha verticalmente ao centro */
-}
-
-/* Rodapé */
-footer {
-    text-align: center; /* Centraliza o texto */
-    padding: 10px; /* Define o preenchimento interno */
-    background-color: #34a853; /* Define a cor de fundo verde */
-    color: white; /* Define a cor do texto como branco */
-    border-top: 5px solid #5cb85c; /* Define a borda superior */
-}
-
-footer p {
-    margin: 0; /* Remove margem */
-    font-size: 1em; /* Define o tamanho da fonte */
-}
-
-/* Tema escuro */
-.dark-theme {
-    --background-color: #333; /* Define a cor de fundo para o modo escuro */
-    --text-color: #000000; /* Define a cor do texto para o modo escuro */
-}
-
-.dark-theme header {
-    background: linear-gradient(135deg, #222, #444); /* Altera o gradiente do cabeçalho no tema escuro */
-}
-
-.dark-theme button {
-    background-color: #555; /* Altera o fundo dos botões no tema escuro */
-    color: #fff; /* Altera a cor do texto dos botões */
-}
-
-.dark-theme footer {
-    background-color: #222; /* Define o fundo do rodapé no tema escuro */
 }
