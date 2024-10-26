@@ -1,0 +1,240 @@
+/* Estilos básicos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color, #f0f0f0);
+    color: var(--text-color, #333);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+header {
+    background: linear-gradient(135deg, #5cb85c, #34a853);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 5px solid #34a853;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Estilizando o índice */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+    margin: 0 0 10px 0;
+}
+
+/* Estilos para a lista */
+nav ul {
+    list-style-type: none; /* Remove os marcadores */
+    padding: 0;
+    display: flex; /* Alinha os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha, se necessário */
+}
+
+nav li {
+    margin: 5px 15px; /* Adiciona espaçamento entre os itens */
+}
+
+nav a {
+    text-decoration: none;
+    color: #5cb85c;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #34a853;
+}
+
+/* Novos estilos para exemplos de CSS */
+.styled-input {
+    width: 10%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 2px solid #34a853;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.styled-input:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+.botao-com-css {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #fff;
+    color: #34a853;
+    border: 2px solid #34a853;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-com-css:hover {
+    background-color: #34a853;
+    color: white;
+}
+
+#toggle-theme-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 50px;
+}
+
+/* Seções */
+main {
+    padding: 20px;
+}
+
+/* Estilos para cards */
+.card1 {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card {
+    display: flex;
+   text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #5cb85c;
+    color: white;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #34a853;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #5cb85c;
+    padding-bottom: 5px;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Efeito hover */
+#hover-box {
+    width: 250px;
+    height: 100px;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#hover-box:hover {
+    background-color: #5cb85c;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra de progresso */
+#progress-container {
+    width: 100%;
+    background-color: #ddd;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #5cb85c;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Slider de controle de cores */
+#color-box {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 100%, 50%);
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #34a853;
+    color: white;
+    border-top: 5px solid #5cb85c;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Tema escuro */
+.dark-theme {
+    --background-color: #333;
+    --text-color: #000000;
+}
+
+.dark-theme header {
+    background: linear-gradient(135deg, #222, #444);
+}
+
+.dark-theme button {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-theme footer {
+    background-color: #222;
+}
