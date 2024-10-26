@@ -1,102 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Declara o tipo de documento como HTML e define o idioma como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprenda CSS e JavaScript</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, garantindo suporte a caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta o layout para se adaptar ao tamanho da tela do dispositivo -->
+    <title>Aprenda CSS e JavaScript</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo que contém o estilo da página -->
 </head>
 <body>
-    <header>
-        <h1>Aprenda CSS e JavaScript</h1>
-        <p>Um guia simples e interativo para iniciantes</p>
-        <button id="toggle-theme-btn">Alternar Tema Claro/Escuro</button>
-        <nav class="indice">
+    <header> <!-- Início do cabeçalho da página -->
+        <h1>Aprenda CSS e JavaScript</h1> <!-- Título principal da página -->
+        <p>Um guia simples e interativo para iniciantes</p> <!-- Descrição da página -->
+        <button id="toggle-theme-btn">Alternar Tema Claro/Escuro</button> <!-- Botão para alternar o tema da página -->
+        <nav class="indice"> <!-- Navegação que serve como índice da página -->
             <ul>
-                <li><a href="#history-section">História CSS</a></li>
-                <li><a href="#js-history">História JavaScript</a></li>
-                <li><a href="#css-examples-section">Exemplos de Estilos CSS</a></li>
-                <li><a href="#hover-section">Efeito Hover Interativo</a></li>
-                <li><a href="#progress-section">Barra de Progresso</a></li>
-                <li><a href="#color-slider-section">Controle de Cor Interativo</a></li>
+                <li><a href="#history-section">História CSS</a></li> <!-- Link para a seção "História CSS" -->
+                <li><a href="#js-history">História JavaScript</a></li> <!-- Link para a seção "História JavaScript" -->
+                <li><a href="#css-examples-section">Exemplos de Estilos CSS</a></li> <!-- Link para a seção "Exemplos de Estilos CSS" -->
+                <li><a href="#hover-section">Efeito Hover Interativo</a></li> <!-- Link para a seção "Efeito Hover Interativo" -->
+                <li><a href="#progress-section">Barra de Progresso</a></li> <!-- Link para a seção "Barra de Progresso" -->
+                <li><a href="#color-slider-section">Controle de Cor Interativo</a></li> <!-- Link para a seção "Controle de Cor Interativo" -->
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main> <!-- Início do conteúdo principal da página -->
 
-        <section id="history-section">
-            <h2>História e Propósito do CSS</h2>
-            <article id="css-history">
-                <h3>História do CSS</h3>
-                <p>O CSS (Cascading Style Sheets) foi criado em 1996 por Håkon Wium Lie. A ideia por trás do CSS era separar o conteúdo da apresentação, facilitando o design de páginas web sem afetar o conteúdo HTML. Antes do CSS, os desenvolvedores usavam tags HTML como <code>&lt;font&gt;</code> para estilizar páginas, o que tornava o código difícil de manter e menos flexível. O CSS foi uma revolução, permitindo o controle de layout, cores, fontes e mais de uma maneira muito mais eficiente.</p>
-                <h4>Para que serve o CSS?</h4>
-                <p>O CSS é essencial para a personalização visual de uma página web. Ele permite que os desenvolvedores criem layouts responsivos, estilos personalizados e efeitos visuais, melhorando a experiência do usuário. Com CSS, é possível definir como cada elemento em uma página web deve ser exibido, incluindo fontes, cores, margens, espaçamentos, e até animações.</p>
+        <section id="history-section"> <!-- Seção de história e propósito do CSS -->
+            <h2>História e Propósito do CSS</h2> <!-- Subtítulo da seção -->
+            <article id="css-history"> <!-- Artigo sobre a história do CSS -->
+                <h3>História do CSS</h3> <!-- Subtítulo do artigo -->
+                <p>O CSS (Cascading Style Sheets) foi criado em 1996 por Håkon Wium Lie...</p> <!-- Parágrafo explicativo sobre o CSS -->
+                <h4>Para que serve o CSS?</h4> <!-- Subtítulo da seção -->
+                <p>O CSS é essencial para a personalização visual de uma página web...</p> <!-- Explicação sobre a utilidade do CSS -->
             </article>
         </section>
-        <section>
-            <article id="js-history">
-                <h2>História e Propósito do JavaScript</h2>
-                <h3>História do JavaScript</h3>
-                <p>O JavaScript foi criado em 1995 por Brendan Eich enquanto trabalhava para a Netscape. Originalmente chamado de Mocha, depois renomeado para LiveScript, o JavaScript surgiu como uma linguagem de programação destinada a tornar as páginas web dinâmicas. Ao contrário de outras linguagens mais complexas, como Java, o JavaScript foi projetado para ser simples e acessível aos desenvolvedores web.</p>
-                <h4>Para que serve o JavaScript?</h4>
-                <p>O JavaScript é usado para tornar páginas web interativas. Ele permite que você manipule o conteúdo de uma página em tempo real, responda a eventos como cliques de botão, movimente elementos na tela, valide formulários e muito mais. Graças ao JavaScript, os sites modernos podem oferecer uma experiência rica e dinâmica, sem a necessidade de recarregar a página toda vez que o usuário interage com ela.</p>
+
+        <section> <!-- Seção sobre JavaScript -->
+            <article id="js-history"> <!-- Artigo sobre a história do JavaScript -->
+                <h2>História e Propósito do JavaScript</h2> <!-- Subtítulo da seção -->
+                <h3>História do JavaScript</h3> <!-- Subtítulo do artigo -->
+                <p>O JavaScript foi criado em 1995 por Brendan Eich...</p> <!-- Parágrafo explicativo sobre o JavaScript -->
+                <h4>Para que serve o JavaScript?</h4> <!-- Subtítulo explicativo -->
+                <p>O JavaScript é usado para tornar páginas web interativas...</p> <!-- Explicação sobre a utilidade do JavaScript -->
             </article>
         </section>
 
         <!-- Novas Seções para Exemplos de CSS -->
-        <section id="css-examples-section">
-            <h2>Exemplos de Estilos CSS</h2>
+        <section id="css-examples-section"> <!-- Seção de exemplos práticos de CSS -->
+            <h2>Exemplos de Estilos CSS</h2> <!-- Título da seção -->
             
-            <h3>Caixa de Texto Estilizada</h3>
-            <input type="text" class="styled-input" placeholder="Texto estilizado">
-            <input type="text" placeholder="Texto não estilizado">
+            <h3>Caixa de Texto Estilizada</h3> <!-- Subtítulo -->
+            <input type="text" class="styled-input" placeholder="Texto estilizado"> <!-- Campo de texto estilizado -->
+            <input type="text" placeholder="Texto não estilizado"> <!-- Campo de texto sem estilo -->
 
-            <h3>Botões Estilizados</h3>
-            <button class="botao-com-css">Botão com CSS</button>
-            <button>Botão sem CSS</button>
+            <h3>Botões Estilizados</h3> <!-- Subtítulo -->
+            <button class="botao-com-css">Botão com CSS</button> <!-- Botão estilizado -->
+            <button>Botão sem CSS</button> <!-- Botão sem estilo -->
 
-            <h3>Cards de Informação</h3>
-            <div class="card">
-                <h4>Card Estilizado</h4>
-                <p>Descrição do card. Este é um exemplo de card com CSS estilizado.</p>
+            <h3>Cards de Informação</h3> <!-- Subtítulo -->
+            <div class="card"> <!-- Card estilizado -->
+                <h4>Card Estilizado</h4> <!-- Título do card -->
+                <p>Descrição do card. Este é um exemplo de card com CSS estilizado.</p> <!-- Descrição do card -->
             </div>
-            <div>
-                <h4>Card não Estilizado</h4>
-                <p>Descrição do card. Este é um exemplo de card sem a estilização do CSS.</p>
+            <div> <!-- Card sem estilo -->
+                <h4>Card não Estilizado</h4> <!-- Título do card sem estilo -->
+                <p>Descrição do card. Este é um exemplo de card sem a estilização do CSS.</p> <!-- Descrição do card sem estilo -->
             </div>
         </section>
 
-        <section id="hover-section">
-            <h2>Efeito Hover Interativo</h2>
-            <p>Passe o mouse sobre a caixa abaixo para ver o efeito de hover em ação.</p>
-            <div id="hover-box">Passe o mouse aqui!</div>
+        <section id="hover-section"> <!-- Seção sobre efeito de hover -->
+            <h2>Efeito Hover Interativo</h2> <!-- Título da seção -->
+            <p>Passe o mouse sobre a caixa abaixo para ver o efeito de hover em ação.</p> <!-- Descrição do efeito -->
+            <div id="hover-box">Passe o mouse aqui!</div> <!-- Caixa interativa com efeito de hover -->
         </section>
 
-        <section id="progress-section">
-            <h2>Barra de Progresso</h2>
-            <p>Use o botão abaixo para preencher a barra de progresso com JavaScript.</p>
-            <div id="progress-container">
-                <div id="progress-bar"></div>
+        <section id="progress-section"> <!-- Seção sobre a barra de progresso -->
+            <h2>Barra de Progresso</h2> <!-- Título da seção -->
+            <p>Use o botão abaixo para preencher a barra de progresso com JavaScript.</p> <!-- Explicação da barra de progresso -->
+            <div id="progress-container"> <!-- Contêiner da barra de progresso -->
+                <div id="progress-bar"></div> <!-- Barra de progresso que será preenchida com JavaScript -->
             </div>
-            <button class="botao-com-css" id="fill-progress-btn">Preencher Progresso</button>
+            <button class="botao-com-css" id="fill-progress-btn">Preencher Progresso</button> <!-- Botão para preencher a barra de progresso -->
         </section>
 
-        <section id="color-slider-section">
-            <h2>Controle de Cor Interativo</h2>
-            <p>Use o controle deslizante abaixo para mudar a cor do quadrado.</p>
+        <section id="color-slider-section"> <!-- Seção sobre controle de cor -->
+            <h2>Controle de Cor Interativo</h2> <!-- Título da seção -->
+            <p>Use o controle deslizante abaixo para mudar a cor do quadrado.</p> <!-- Explicação do controle de cor -->
             <div class="slider">
-                <input type="range" id="color-slider" min="0" max="360">
+                <input type="range" id="color-slider" min="0" max="360"> <!-- Controle deslizante para selecionar a cor -->
             </div>
-            <div id="color-box"></div>
+            <div id="color-box"></div> <!-- Caixa cuja cor muda com o controle deslizante -->
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Guia de CSS e JavaScript para Iniciantes</p>
-        <p>made by <a href="https://github.com/LeoMarxs" target="_blank">LeoMarks</a></p>
+    <footer> <!-- Rodapé da página -->
+        <p>&copy; 2024 Guia de CSS e JavaScript para Iniciantes</p> <!-- Informações de copyright -->
+        <p>made by <a href="https://github.com/LeoMarxs" target="_blank">LeoMarks</a></p> <!-- Link para o autor no GitHub -->
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript que manipula a interação da página -->
 </body>
 </html>
